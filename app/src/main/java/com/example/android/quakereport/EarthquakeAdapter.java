@@ -22,8 +22,7 @@ public class EarthquakeAdapter extends ArrayAdapter<Earthquake> {
     private static final String LOCATION_SEPARATOR = " of ";
 
 
-    public EarthquakeAdapter (Context context, ArrayList<Earthquake> earthquakes) {
-        super(context, 0, earthquakes);
+    public EarthquakeAdapter (Context context, ArrayList<Earthquake> earthquakes) { super(context, 0, earthquakes);
     }
 
     @Override
@@ -70,7 +69,7 @@ public class EarthquakeAdapter extends ArrayAdapter<Earthquake> {
         magnitudeCircle.setColor(magnitudeColor);
 
         //get location view and set its content
-        TextView locationView = (TextView) listItemView.findViewById(R.id.location);
+        TextView locationView = (TextView) listItemView.findViewById(R.id.primary_location);
         locationView.setText(primaryLocation);
 
         //get the locaion offsetView and set its text(locationOffset)

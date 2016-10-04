@@ -13,6 +13,7 @@ public class Earthquake {
         mLocation = location;
         mMagnitude = magnitude;
         mTimeInMillSec = time;
+        mUrl = url;
     }
 
     public String getmLocation() {
