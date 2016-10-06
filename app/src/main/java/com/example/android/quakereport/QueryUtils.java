@@ -33,6 +33,13 @@ public final class QueryUtils {
     }
 
     public static List<Earthquake> fetchEarthquakeData(String requestUrl){
+        //slow down the program to so that we can see progress indictor
+
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
 
 
         //create url object
